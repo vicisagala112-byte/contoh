@@ -138,7 +138,11 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+<<<<<<< Updated upstream:contoh/Assets/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png.meta
     forceMaximumCompressionQuality_BC6H_BC7: 1
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Stashed changes:contoh/Assets/Sprite/Sampah/Anorganic/Plastik.png.meta
   - serializedVersion: 4
     buildTarget: VisionOS
     maxTextureSize: 2048
@@ -151,7 +155,11 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+<<<<<<< Updated upstream:contoh/Assets/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png.meta
     forceMaximumCompressionQuality_BC6H_BC7: 1
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> Stashed changes:contoh/Assets/Sprite/Sampah/Anorganic/Plastik.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -168,7 +176,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Plastik_0: -3529944187033082084
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
