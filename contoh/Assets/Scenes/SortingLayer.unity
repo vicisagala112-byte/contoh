@@ -284,7 +284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587aaf46b31c4f44a8e986f8388fdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   trashType: 1
+=======
+>>>>>>> Stashed changes
 --- !u!58 &678344532
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -364,7 +367,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3662241982027444729, guid: baf5fb2cf87644c47979eb367e02aba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -869,7 +872,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587aaf46b31c4f44a8e986f8388fdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   trashType: 1
+=======
+>>>>>>> Stashed changes
 --- !u!58 &2067630289
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1007,7 +1013,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587aaf46b31c4f44a8e986f8388fdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   trashType: 2
+=======
+>>>>>>> Stashed changes
 --- !u!58 &2067797652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1145,7 +1154,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d587aaf46b31c4f44a8e986f8388fdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   trashType: 0
+=======
+>>>>>>> Stashed changes
 --- !u!58 &2117016946
 CircleCollider2D:
   m_ObjectHideFlags: 0
