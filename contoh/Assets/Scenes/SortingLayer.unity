@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 416370454}
   m_Layer: 0
   m_Name: 'TrashAnorganic '
-  m_TagString: Untagged
+  m_TagString: DropAreaAnorganic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 678344531}
   m_Layer: 0
   m_Name: Botol
-  m_TagString: DropAreaAnorganic
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 1055513612}
   m_Layer: 0
   m_Name: TrashOrganic
-  m_TagString: Untagged
+  m_TagString: DropAreaOrganic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 2030262595}
   m_Layer: 0
   m_Name: TrashB3
-  m_TagString: Untagged
+  m_TagString: DropAreaB3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,12 +847,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067630291}
-  - component: {fileID: 2067630290}
   - component: {fileID: 2067630289}
   - component: {fileID: 2067630288}
+  - component: {fileID: 2067630292}
   m_Layer: 0
   m_Name: Besi
-  m_TagString: DropAreaAnorganic
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -906,7 +906,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.87
---- !u!212 &2067630290
+--- !u!4 &2067630291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067630287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.73, y: 0.49, z: -0.032674633}
+  m_LocalScale: {x: 0.5379136, y: 0.5379136, z: 0.5379136}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2067630292
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -961,21 +976,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &2067630291
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067630287}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.73, y: 0.49, z: -0.032674633}
-  m_LocalScale: {x: 0.5379136, y: 0.5379136, z: 0.5379136}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067797650
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 2067797651}
   m_Layer: 0
   m_Name: b3
-  m_TagString: DropAreaB3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 2117016945}
   m_Layer: 0
   m_Name: Organic
-  m_TagString: DropAreaOrganic
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
