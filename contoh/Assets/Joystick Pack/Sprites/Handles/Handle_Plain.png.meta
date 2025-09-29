@@ -168,7 +168,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KALENG_0: 5108566962947670297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
