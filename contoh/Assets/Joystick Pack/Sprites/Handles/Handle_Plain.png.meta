@@ -138,11 +138,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-<<<<<<< Updated upstream:contoh/Assets/Joystick Pack/Sprites/Handles/Handle_Plain.png.meta
-    forceMaximumCompressionQuality_BC6H_BC7: 1
-=======
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> Stashed changes:contoh/Assets/Sprite/Sampah/Anorganic/KALENG.png.meta
   - serializedVersion: 4
     buildTarget: VisionOS
     maxTextureSize: 2048
@@ -155,11 +151,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-<<<<<<< Updated upstream:contoh/Assets/Joystick Pack/Sprites/Handles/Handle_Plain.png.meta
     forceMaximumCompressionQuality_BC6H_BC7: 1
-=======
-    forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> Stashed changes:contoh/Assets/Sprite/Sampah/Anorganic/KALENG.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -176,8 +168,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KALENG_0: 5108566962947670297
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
