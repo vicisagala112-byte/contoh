@@ -2,71 +2,69 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
-    Vector3 offset;
-    Collider2D collider2D;
-
     public enum TrashType { Organic, Anorganic, B3 }
-    public TrashType trashType;
+    public TrashType trashType; //untuk atur jenis sampah
 
-    string[] validTags;
+    private Vector3 startPosition; // untuk menyimpan ke posisi semula
+    private bool isDragging = false; //agar objek yg lagi di-drag,dapat digunakan kalau OnTriggerEnter2D sedang di drag
 
-    void Awake()
+    void Start()
     {
-        collider2D = GetComponent<Collider2D>();
-
-        // menyetel sampah melalui tags bedasarkan jenis sampah
-        switch (trashType)
-        {
-            case TrashType.Organic:
-                validTags = new string[] { "DropAreaOrganic" };
-                break;
-            case TrashType.Anorganic:
-                validTags = new string[] { "DropAreaAnorganic" };
-                break;
-            case TrashType.B3:
-                validTags = new string[] { "DropAreaB3" };
-                break;
-        }
+        startPosition = transform.position;
     }
 
     void OnMouseDown()
     {
-        offset = transform.position - MouseWorldPosition();
+        isDragging = true;
     }
 
     void OnMouseDrag()
     {
-        transform.position = MouseWorldPosition() + offset;
+        if (isDragging)
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+            transform.position = mousePos;
+        }
     }
 
     void OnMouseUp()
     {
-        collider2D.enabled = false;
+        isDragging = false;
 
-        var rayOrigin = Camera.main.transform.position;
-        var rayDirection = MouseWorldPosition() - Camera.main.transform.position;
-
-        RaycastHit2D hitInfo;
-        if (hitInfo = Physics2D.Raycast(rayOrigin, rayDirection))
-        {
-            foreach (string tag in validTags)
-            {
-                if (hitInfo.transform.CompareTag(tag))
-                {
-                    transform.position = hitInfo.transform.position + new Vector3(0, 0, -0.01f);
-                    break;
-                }
-            }
-        }
-
-        collider2D.enabled = true;
+        // untuk mengembalikan ke posisi awal jika sampah tidak sesuai tempat atau terlepas
+        transform.position = startPosition;
     }
 
-    Vector3 MouseWorldPosition()
+    // mengecek sampah bertabrakan dengan tong sampah 
+    void OnTriggerEnter2D(Collider2D other)
     {
-        var mouseScreenPos = Input.mousePosition;
-        mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
-        return Camera.main.ScreenToWorldPoint(mouseScreenPos);
+        if (!isDragging) return; // cuma kalau sedang di-drag
+
+        // penentuan sesuai jenis sampah
+        if (trashType == TrashType.Organic && other.CompareTag("DropAreaOrganic"))
+        {
+            GameManagerSorting.Instance.AddCoins(2);
+            GameManagerSorting.Instance.ShowResult("Benar!");
+            Destroy(gameObject); //jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+        }
+        else if (trashType == TrashType.Anorganic && other.CompareTag("DropAreaAnorganic"))
+        {
+            GameManagerSorting.Instance.AddCoins(5);
+            GameManagerSorting.Instance.ShowResult("Benar!");
+            Destroy(gameObject); // jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+        }
+        else if (trashType == TrashType.B3 && other.CompareTag("DropAreaB3"))
+        {
+            GameManagerSorting.Instance.AddCoins(8);
+            GameManagerSorting.Instance.ShowResult("Benar!");
+            Destroy(gameObject); //jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+        }
+        else
+        {
+            GameManagerSorting.Instance.ReduceTime(2f);
+            GameManagerSorting.Instance.ShowResult("Salah!");
+            transform.position = startPosition; //jadi kalau sampahnya salah maka dia kembali ke tempat semula
+        }
     }
 }
-

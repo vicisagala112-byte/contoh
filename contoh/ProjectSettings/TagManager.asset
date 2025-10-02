@@ -7,6 +7,9 @@ TagManager:
   - DropAreaOrganic
   - DropAreaAnorganic
   - DropAreaB3
+  - Organic
+  - Anorganic
+  - B3
   layers:
   - Default
   - TransparentFX
