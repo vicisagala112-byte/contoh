@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public Joystick joystick; // drag joystick ke sini (jika pakai joystick)
+    public Joystick joystick; 
 
     private Rigidbody2D rb;
     private Animator anim;
