@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7d55cd49fe219144cb7d3565781064cd
+guid: 47c3480770a534e44ac80e2c95a42782
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2801831676244446834
-    second: KARDUS_0
+      213: -7832214784768987486
+    second: apple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KARDUS_0
+      name: apple_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 45
-        width: 174
-        height: 120
+        x: 52
+        y: 28
+        width: 96
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27eccf6901b12e620800000000000000
-      internalID: 2801831676244446834
+      spriteID: 2ae284d66226e4390800000000000000
+      internalID: -7832214784768987486
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KARDUS_0: 2801831676244446834
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
