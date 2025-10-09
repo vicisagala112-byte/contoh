@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d4df6a8cdd6c0584e9a0b45f4193ff62
+guid: ffd8c4df704a2404a83b9e941243b69b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6415426798387142225
-    second: Kertas_0
+      213: 6042258093550754355
+    second: Inject_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: VisionOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,7 +123,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: VisionOS
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kertas_0
+      name: Inject_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 32
-        width: 170
-        height: 144
+        x: 11
+        y: 22
+        width: 149
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa1ec973153d7f6a0800000000000000
-      internalID: -6415426798387142225
+      spriteID: 33a525b09b96ad350800000000000000
+      internalID: 6042258093550754355
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Kertas_0: -6415426798387142225
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
