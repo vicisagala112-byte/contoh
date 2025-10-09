@@ -1,0 +1,1638 @@
+fileFormatVersion: 2
+guid: 3bf535957a978e94e8caa3775cb620d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3194220495149046353
+    second: karakter acc jadi satu_0
+  - first:
+      213: 2269977154857881388
+    second: karakter acc jadi satu_1
+  - first:
+      213: 3708907233546284202
+    second: karakter acc jadi satu_2
+  - first:
+      213: 3666655583000335288
+    second: karakter acc jadi satu_3
+  - first:
+      213: -2491636442346749845
+    second: karakter acc jadi satu_4
+  - first:
+      213: -3331226123185391383
+    second: karakter acc jadi satu_5
+  - first:
+      213: 2950694775816798395
+    second: karakter acc jadi satu_6
+  - first:
+      213: 5661780941108569780
+    second: karakter acc jadi satu_7
+  - first:
+      213: -3873887988098162210
+    second: karakter acc jadi satu_8
+  - first:
+      213: -6949811238778977366
+    second: karakter acc jadi satu_9
+  - first:
+      213: 3402904672779140814
+    second: karakter acc jadi satu_10
+  - first:
+      213: 1262705784222912297
+    second: karakter acc jadi satu_11
+  - first:
+      213: 197207480949056956
+    second: karakter acc jadi satu_12
+  - first:
+      213: 5712446825022967804
+    second: karakter acc jadi satu_13
+  - first:
+      213: -1889771481026241178
+    second: karakter acc jadi satu_14
+  - first:
+      213: -2738666094372462531
+    second: karakter acc jadi satu_15
+  - first:
+      213: -6051001898225946924
+    second: karakter acc jadi satu_16
+  - first:
+      213: 9149116004523595979
+    second: karakter acc jadi satu_17
+  - first:
+      213: 5825577778145270187
+    second: karakter acc jadi satu_18
+  - first:
+      213: -9042421648286673510
+    second: karakter acc jadi satu_19
+  - first:
+      213: 3035167103551638329
+    second: karakter acc jadi satu_20
+  - first:
+      213: -837656299872901206
+    second: karakter acc jadi satu_21
+  - first:
+      213: 347781977709070811
+    second: karakter acc jadi satu_22
+  - first:
+      213: 1014840216343626529
+    second: karakter acc jadi satu_23
+  - first:
+      213: -3905373714968536835
+    second: karakter acc jadi satu_24
+  - first:
+      213: 5277226600955412348
+    second: karakter acc jadi satu_25
+  - first:
+      213: 7081682662603281835
+    second: karakter acc jadi satu_26
+  - first:
+      213: 3866628394345217405
+    second: karakter acc jadi satu_27
+  - first:
+      213: -5059929166086957924
+    second: karakter acc jadi satu_28
+  - first:
+      213: -4036787281426352288
+    second: karakter acc jadi satu_29
+  - first:
+      213: 8089474367611880567
+    second: karakter acc jadi satu_30
+  - first:
+      213: -5673588791078002496
+    second: karakter acc jadi satu_31
+  - first:
+      213: -3232963118507560972
+    second: karakter acc jadi satu_32
+  - first:
+      213: -8758966402496906040
+    second: karakter acc jadi satu_33
+  - first:
+      213: 7585201952839990640
+    second: karakter acc jadi satu_34
+  - first:
+      213: -4043932432986090221
+    second: karakter acc jadi satu_35
+  - first:
+      213: 2557864200125943132
+    second: karakter acc jadi satu_36
+  - first:
+      213: 8723730388325542504
+    second: karakter acc jadi satu_37
+  - first:
+      213: 6344174424247452293
+    second: karakter acc jadi satu_38
+  - first:
+      213: -2774737918099855646
+    second: karakter acc jadi satu_39
+  - first:
+      213: 1781711109053965643
+    second: karakter acc jadi satu_40
+  - first:
+      213: 4748054633923168508
+    second: karakter acc jadi satu_41
+  - first:
+      213: -8957754624161414305
+    second: karakter acc jadi satu_42
+  - first:
+      213: 9041917168832342589
+    second: karakter acc jadi satu_43
+  - first:
+      213: 1870091065272311353
+    second: karakter acc jadi satu_44
+  - first:
+      213: -6371929830691918699
+    second: karakter acc jadi satu_45
+  - first:
+      213: 1661972230942248827
+    second: karakter acc jadi satu_46
+  - first:
+      213: 8964609540668897634
+    second: karakter acc jadi satu_47
+  - first:
+      213: -3298192475999161104
+    second: karakter acc jadi satu_48
+  - first:
+      213: -9168123395466665389
+    second: karakter acc jadi satu_49
+  - first:
+      213: 1065220524924978195
+    second: karakter acc jadi satu_50
+  - first:
+      213: 8060540515099010106
+    second: karakter acc jadi satu_51
+  - first:
+      213: -500524382215681575
+    second: karakter acc jadi satu_52
+  - first:
+      213: -7448262703213594741
+    second: karakter acc jadi satu_53
+  - first:
+      213: 2459687961561480375
+    second: karakter acc jadi satu_54
+  - first:
+      213: -2175672508921090730
+    second: karakter acc jadi satu_55
+  - first:
+      213: 9036243342248514195
+    second: karakter acc jadi satu_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: karakter acc jadi satu_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 337
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa56e542269dba3d0800000000000000
+      internalID: -3194220495149046353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 337
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f4e8b0234908f10800000000000000
+      internalID: 2269977154857881388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 337
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac27607a7fa87330800000000000000
+      internalID: 3708907233546284202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 337
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3107273d392e230800000000000000
+      internalID: 3666655583000335288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 337
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6001806bddeb6dd0800000000000000
+      internalID: -2491636442346749845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 337
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e878059d7b15c1d0800000000000000
+      internalID: -3331226123185391383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 337
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb04921e349f2f820800000000000000
+      internalID: 2950694775816798395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 337
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b66adeb4cfa29e40800000000000000
+      internalID: 5661780941108569780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 337
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1a1c9466f2d3ac0800000000000000
+      internalID: -3873887988098162210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 316
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3cf80008f4d8f90800000000000000
+      internalID: -6949811238778977366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 316
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece748145cb893f20800000000000000
+      internalID: 3402904672779140814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 316
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f007c7838068110800000000000000
+      internalID: 1262705784222912297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_12
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 312
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5a409b82f9cb200800000000000000
+      internalID: 197207480949056956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 312
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff4dcb1f10b64f40800000000000000
+      internalID: 5712446825022967804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_14
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 311
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d54c6b9de26c5e0800000000000000
+      internalID: -1889771481026241178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 311
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30e58e72bd4ef9d0800000000000000
+      internalID: -2738666094372462531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 294
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de270945d5860ca0800000000000000
+      internalID: -6051001898225946924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_17
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 294
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc85872388038fe70800000000000000
+      internalID: 9149116004523595979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_18
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 294
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba912cdbf1c98d050800000000000000
+      internalID: 5825577778145270187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 294
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9512907b6dd28280800000000000000
+      internalID: -9042421648286673510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b852156641f1a20800000000000000
+      internalID: 3035167103551638329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7253a880c0064f0800000000000000
+      internalID: -837656299872901206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9c1a8bdd193d400800000000000000
+      internalID: 347781977709070811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 289
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12341f6cccf651e00800000000000000
+      internalID: 1014840216343626529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8172c3c435dc9c0800000000000000
+      internalID: -3905373714968536835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f703532a97c3940800000000000000
+      internalID: 5277226600955412348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_26
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 289
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5d28c7cd0374260800000000000000
+      internalID: 7081682662603281835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_27
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 289
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7db263d90609a530800000000000000
+      internalID: 3866628394345217405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 272
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c949fba6b3587c9b0800000000000000
+      internalID: -5059929166086957924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_29
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 272
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06774c8fa537af7c0800000000000000
+      internalID: -4036787281426352288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_30
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 272
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7744225d316934070800000000000000
+      internalID: 8089474367611880567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 272
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c06822fd0d5341b0800000000000000
+      internalID: -5673588791078002496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_32
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffea653c253223d0800000000000000
+      internalID: -3232963118507560972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_33
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc3793c676e17680800000000000000
+      internalID: -8758966402496906040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_34
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 265
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d70acecfc044960800000000000000
+      internalID: 7585201952839990640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_35
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 265
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315de2cb0e011e7c0800000000000000
+      internalID: -4043932432986090221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 266
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d023810fb5f7320800000000000000
+      internalID: 2557864200125943132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_37
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 266
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86aac60619ae01970800000000000000
+      internalID: 8723730388325542504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_38
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 266
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5824366a6090b0850800000000000000
+      internalID: 6344174424247452293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_39
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 266
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6e9de80962e79d0800000000000000
+      internalID: -2774737918099855646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_40
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 266
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45678350d8e9b810800000000000000
+      internalID: 1781711109053965643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_41
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 231
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf84325888a74e140800000000000000
+      internalID: 4748054633923168508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_42
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 240
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f530fb921a9afa380800000000000000
+      internalID: -8957754624161414305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_43
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 240
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ae1c842c75b7d70800000000000000
+      internalID: 9041917168832342589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_44
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 240
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e103b6ae5e3f910800000000000000
+      internalID: 1870091065272311353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ca4e3349b5297a0800000000000000
+      internalID: -6371929830691918699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_46
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 241
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f40e340f2801710800000000000000
+      internalID: 1661972230942248827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_47
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 241
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269b5a571e0b86c70800000000000000
+      internalID: 8964609540668897634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_48
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 241
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4343bea677a32d0800000000000000
+      internalID: -3298192475999161104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_49
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 241
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352e24cb85844c080800000000000000
+      internalID: -9168123395466665389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_50
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 202
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314cb937c6c68ce00800000000000000
+      internalID: 1065220524924978195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_51
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 202
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34ee1454eaccdf60800000000000000
+      internalID: 8060540515099010106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_52
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 204
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9cc9ce9b7cd09f0800000000000000
+      internalID: -500524382215681575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 204
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87b925b88472a890800000000000000
+      internalID: -7448262703213594741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_54
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 203
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc3d274b21922220800000000000000
+      internalID: 2459687961561480375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_55
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 203
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dec2e51657ec1e0800000000000000
+      internalID: -2175672508921090730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karakter acc jadi satu_56
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 205
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39216b6917f276d70800000000000000
+      internalID: 9036243342248514195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      karakter acc jadi satu_0: -3194220495149046353
+      karakter acc jadi satu_1: 2269977154857881388
+      karakter acc jadi satu_10: 3402904672779140814
+      karakter acc jadi satu_11: 1262705784222912297
+      karakter acc jadi satu_12: 197207480949056956
+      karakter acc jadi satu_13: 5712446825022967804
+      karakter acc jadi satu_14: -1889771481026241178
+      karakter acc jadi satu_15: -2738666094372462531
+      karakter acc jadi satu_16: -6051001898225946924
+      karakter acc jadi satu_17: 9149116004523595979
+      karakter acc jadi satu_18: 5825577778145270187
+      karakter acc jadi satu_19: -9042421648286673510
+      karakter acc jadi satu_2: 3708907233546284202
+      karakter acc jadi satu_20: 3035167103551638329
+      karakter acc jadi satu_21: -837656299872901206
+      karakter acc jadi satu_22: 347781977709070811
+      karakter acc jadi satu_23: 1014840216343626529
+      karakter acc jadi satu_24: -3905373714968536835
+      karakter acc jadi satu_25: 5277226600955412348
+      karakter acc jadi satu_26: 7081682662603281835
+      karakter acc jadi satu_27: 3866628394345217405
+      karakter acc jadi satu_28: -5059929166086957924
+      karakter acc jadi satu_29: -4036787281426352288
+      karakter acc jadi satu_3: 3666655583000335288
+      karakter acc jadi satu_30: 8089474367611880567
+      karakter acc jadi satu_31: -5673588791078002496
+      karakter acc jadi satu_32: -3232963118507560972
+      karakter acc jadi satu_33: -8758966402496906040
+      karakter acc jadi satu_34: 7585201952839990640
+      karakter acc jadi satu_35: -4043932432986090221
+      karakter acc jadi satu_36: 2557864200125943132
+      karakter acc jadi satu_37: 8723730388325542504
+      karakter acc jadi satu_38: 6344174424247452293
+      karakter acc jadi satu_39: -2774737918099855646
+      karakter acc jadi satu_4: -2491636442346749845
+      karakter acc jadi satu_40: 1781711109053965643
+      karakter acc jadi satu_41: 4748054633923168508
+      karakter acc jadi satu_42: -8957754624161414305
+      karakter acc jadi satu_43: 9041917168832342589
+      karakter acc jadi satu_44: 1870091065272311353
+      karakter acc jadi satu_45: -6371929830691918699
+      karakter acc jadi satu_46: 1661972230942248827
+      karakter acc jadi satu_47: 8964609540668897634
+      karakter acc jadi satu_48: -3298192475999161104
+      karakter acc jadi satu_49: -9168123395466665389
+      karakter acc jadi satu_5: -3331226123185391383
+      karakter acc jadi satu_50: 1065220524924978195
+      karakter acc jadi satu_51: 8060540515099010106
+      karakter acc jadi satu_52: -500524382215681575
+      karakter acc jadi satu_53: -7448262703213594741
+      karakter acc jadi satu_54: 2459687961561480375
+      karakter acc jadi satu_55: -2175672508921090730
+      karakter acc jadi satu_56: 9036243342248514195
+      karakter acc jadi satu_6: 2950694775816798395
+      karakter acc jadi satu_7: 5661780941108569780
+      karakter acc jadi satu_8: -3873887988098162210
+      karakter acc jadi satu_9: -6949811238778977366
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
