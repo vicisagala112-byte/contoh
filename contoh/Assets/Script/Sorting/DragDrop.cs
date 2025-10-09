@@ -5,14 +5,21 @@ namespace sorting
     public class DragDrop : MonoBehaviour
     {
         public enum TrashType { Organic, Anorganic, B3 }
-        public TrashType trashType; //untuk atur jenis sampah
+        public TrashType trashType; // untuk atur jenis sampah
 
-        private Vector3 startPosition; // untuk menyimpan ke posisi semula
-        private bool isDragging = false; //agar objek yg lagi di-drag,dapat digunakan kalau OnTriggerEnter2D sedang di drag
+        private Vector3 startPosition;
+        private bool isDragging = false;
+
+        [Header("Referensi Manager")]
+        public GameManagerSorting gameManager; // langsung assign lewat Inspector
 
         void Start()
         {
             startPosition = transform.position;
+
+            // Kalau lupa assign di Inspector, coba cari otomatis
+            if (gameManager == null)
+                gameManager = FindObjectOfType<GameManagerSorting>();
         }
 
         void OnMouseDown()
@@ -34,39 +41,45 @@ namespace sorting
         {
             isDragging = false;
 
-            // untuk mengembalikan ke posisi awal jika sampah tidak sesuai tempat atau terlepas
+            // kembali ke posisi awal kalau tidak kena tong
             transform.position = startPosition;
         }
 
-        // mengecek sampah bertabrakan dengan tong sampah 
         void OnTriggerEnter2D(Collider2D other)
         {
-            if (!isDragging) return; // cuma kalau sedang di-drag
+            if (!isDragging) return;
 
-            // penentuan sesuai jenis sampah
+            if (gameManager == null) return; // safety
+
+            bool correct = false;
+
+            // pengecekan tong sesuai tipe
             if (trashType == TrashType.Organic && other.CompareTag("DropAreaOrganic"))
             {
-                GameManagerSorting.Instance.AddCoins(2);
-                GameManagerSorting.Instance.ShowResult("Benar!");
-                Destroy(gameObject); //jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+                gameManager.AddCoins(2);
+                correct = true;
             }
             else if (trashType == TrashType.Anorganic && other.CompareTag("DropAreaAnorganic"))
             {
-                GameManagerSorting.Instance.AddCoins(5);
-                GameManagerSorting.Instance.ShowResult("Benar!");
-                Destroy(gameObject); // jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+                gameManager.AddCoins(5);
+                correct = true;
             }
             else if (trashType == TrashType.B3 && other.CompareTag("DropAreaB3"))
             {
-                GameManagerSorting.Instance.AddCoins(8);
-                GameManagerSorting.Instance.ShowResult("Benar!");
-                Destroy(gameObject); //jadi kalau sampahnya bener sesuai jenisnya maka sampah hilang
+                gameManager.AddCoins(8);
+                correct = true;
+            }
+
+            if (correct)
+            {
+                gameManager.ShowResult("Benar!");
+                Destroy(gameObject); // sampah hilang kalau benar
             }
             else
             {
-                GameManagerSorting.Instance.ReduceTime(2f);
-                GameManagerSorting.Instance.ShowResult("Salah!");
-                transform.position = startPosition; //jadi kalau sampahnya salah maka dia kembali ke tempat semula
+                gameManager.ReduceTime(2f);
+                gameManager.ShowResult("Salah!");
+                transform.position = startPosition; // kembali ke awal kalau salah
             }
         }
     }

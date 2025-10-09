@@ -3,33 +3,30 @@ using UnityEngine.UI;
 
 namespace sorting
 {
-
     public class GameManagerSorting : MonoBehaviour
     {
-        public static GameManagerSorting Instance; // Singleton, ini menggunakan singleton agar lebih mudah mengakses, tidak menggunakan FindObjectOfType terus menerus, jadi agar tidak eror aja kalau keseringan gunakan FindObjectOfType
-
-        [Header("Tampilan")] //jadi ini itu nama untuk tampilan di inspector, biar ingat jd kucatat
+        [Header("Tampilan")]
         public Text timeText;
         public Text coinText;
-        public Text resultText;
 
-        [Header("Atur Waktu")] //jadi ini itu nama untuk tampilan di inspector, biar ingat jd kucatat
+        [Header("Panel Pesan")]
+        public GameObject resultPanel;   // Panel untuk menampilkan pesan
+        public Text resultText;          // Text di dalam panel
+
+        [Header("Atur Waktu")]
         public float maxTime = 30f;
 
         private float currentTime;
         private int coins = 0;
         private bool gameOver = false;
 
-        void Awake()
-        {
-            if (Instance == null) Instance = this;
-            else Destroy(gameObject);
-        }
-
         void Start()
         {
             currentTime = maxTime;
             UpdateUI();
+
+            if (resultPanel != null)
+                resultPanel.SetActive(false); // pastikan panel pesan mati di awal
         }
 
         void Update()
@@ -39,14 +36,13 @@ namespace sorting
                 if (currentTime > 0)
                 {
                     currentTime -= Time.deltaTime;
-                    if (currentTime < 0) currentTime = 0; //selisih waktu antar waktu sebelumnya dengan waktu ketika sedang dimainkan atau real-time).
+                    if (currentTime < 0) currentTime = 0;
                     UpdateUI();
                 }
                 else
                 {
-                    gameOver = true;  //jadi kalau waktu habis, maka perhitungan berhenti, sebenarnya bisa ditambah panel sih
-                    if (resultText != null)
-                        resultText.text = "WAKTU HABIS!";
+                    gameOver = true;
+                    ShowResult("WAKTU HABIS!");
                 }
             }
         }
@@ -57,7 +53,7 @@ namespace sorting
 
             coins += amount;
             UpdateUI();
-            ShowResult("Benar!"); //menampilkan teks benar, kucatat biar g lupa
+            ShowResult("Benar!");
         }
 
         public void ReduceTime(float amount)
@@ -68,7 +64,7 @@ namespace sorting
             if (currentTime < 0) currentTime = 0;
 
             UpdateUI();
-            ShowResult("Salah!"); //menampilkan teks benar, kucatat biar g lupa
+            ShowResult("Salah!");
         }
 
         private void UpdateUI()
@@ -77,23 +73,25 @@ namespace sorting
                 timeText.text = "Waktu: " + Mathf.CeilToInt(currentTime);
 
             if (coinText != null)
-                coinText.text = coins.ToString(); //ini cointext itu tampilan ui, nah kalau cointostring itu langsung perhitungannya. dicatat ya biar g lupa
+                coinText.text = coins.ToString();
         }
 
         public void ShowResult(string message)
         {
-            if (resultText != null)
+            if (resultPanel != null && resultText != null)
             {
                 resultText.text = message;
-                CancelInvoke(nameof(ClearMessage)); //ini agar pesan benar atau salahnya tidak lama muncul/tertunda lah disebut.
-                Invoke(nameof(ClearMessage), 1.5f); //jadi ini akan muncul setelah 1setengah detik 
+                resultPanel.SetActive(true);
+
+                CancelInvoke(nameof(HideResult));
+                Invoke(nameof(HideResult), 1.5f); // panel otomatis hilang setelah 1.5 detik
             }
         }
 
-        private void ClearMessage()
+        private void HideResult()
         {
-            if (resultText != null)
-                resultText.text = ""; //ini kalau udah terpanggil dia benar/salah, teksnya ga muncul itu terus, jadi g bertabrakan atau pesan muncul sebentar
+            if (resultPanel != null)
+                resultPanel.SetActive(false);
         }
     }
 }
