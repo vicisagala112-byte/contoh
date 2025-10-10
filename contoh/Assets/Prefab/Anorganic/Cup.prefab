@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 775896413080613592}
   - component: {fileID: -7456045127065273191}
   - component: {fileID: -2354397413330029624}
+  - component: {fileID: 4765640097843927357}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Anorganic
@@ -190,3 +191,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4765640097843927357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346141909614263270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5

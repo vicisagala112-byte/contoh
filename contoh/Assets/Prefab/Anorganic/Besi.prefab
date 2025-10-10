@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1441967702579781176}
   - component: {fileID: -8778687992274087332}
   - component: {fileID: -8171153631378002777}
+  - component: {fileID: 8403099870913512345}
   m_Layer: 0
   m_Name: Besi
   m_TagString: Anorganic
@@ -167,3 +168,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8403099870913512345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8817529403743986848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5

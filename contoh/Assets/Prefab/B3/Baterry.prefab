@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1910838297250568705}
   - component: {fileID: 3813741554415201762}
   - component: {fileID: 8913358362517694200}
+  - component: {fileID: 4517814080443503598}
   m_Layer: 0
   m_Name: Baterry
   m_TagString: B3
@@ -168,3 +169,16 @@ PolygonCollider2D:
       - {x: 0.205, y: 0.55}
       - {x: 0.155, y: 0.56}
   m_UseDelaunayMesh: 0
+--- !u!114 &4517814080443503598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948016953016398302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5

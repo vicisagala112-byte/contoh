@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5032672807382870516}
   - component: {fileID: 6654781076418575246}
   - component: {fileID: -1761456891972050000}
+  - component: {fileID: 7347122732387031099}
   m_Layer: 0
   m_Name: Kertas
   m_TagString: Anorganic
@@ -203,3 +204,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7347122732387031099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60826566472107521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5
