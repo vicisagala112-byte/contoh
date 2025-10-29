@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8604633092662019885}
   - component: {fileID: 840924756077201598}
-  - component: {fileID: -5382773895448613866}
-  - component: {fileID: 2135594204502473109}
   - component: {fileID: -1787471484953080243}
+  - component: {fileID: -9166936277708758745}
   m_Layer: 0
   m_Name: BotolKaca
   m_TagString: Anorganic
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: -5758023185365643070, guid: 9809eb4c5cdcc1047a97a76795cf92d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,8 +89,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-5382773895448613866
-PolygonCollider2D:
+--- !u!114 &-1787471484953080243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024714334210535766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDetectRange: 1.5
+--- !u!61 &-9166936277708758745
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,73 +146,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.53499997, y: -0.435}
-      - {x: 0.575, y: -0.305}
-      - {x: 0.755, y: -0.275}
-      - {x: 0.755, y: -0.185}
-      - {x: 0.72499996, y: -0.074999996}
-      - {x: 0.385, y: 0.295}
-      - {x: 0.325, y: 0.33499998}
-      - {x: 0.105, y: 0.435}
-      - {x: -0.185, y: 0.705}
-      - {x: -0.33499998, y: 0.815}
-      - {x: -0.445, y: 0.955}
-      - {x: -0.49499997, y: 0.955}
-      - {x: -0.525, y: 0.945}
-      - {x: -0.755, y: 0.72499996}
-      - {x: -0.755, y: 0.66499996}
-      - {x: -0.60499996, y: 0.525}
-      - {x: -0.515, y: 0.375}
-      - {x: -0.295, y: 0.074999996}
-      - {x: -0.225, y: -0.21499999}
-      - {x: -0.16499999, y: -0.315}
-      - {x: -0.114999995, y: -0.385}
-      - {x: 0.345, y: -0.875}
-      - {x: 0.415, y: -0.945}
-      - {x: 0.45499998, y: -0.935}
-      - {x: 0.515, y: -0.775}
-      - {x: 0.355, y: -0.515}
-      - {x: 0.375, y: -0.415}
-  m_UseDelaunayMesh: 0
---- !u!50 &2135594204502473109
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024714334210535766}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-1787471484953080243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024714334210535766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectRange: 1.5
+  m_Size: {x: 1.51, y: 1.91}
+  m_EdgeRadius: 0

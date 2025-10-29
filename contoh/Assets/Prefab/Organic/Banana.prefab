@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6805056787802413938}
   - component: {fileID: 9219977025515428121}
-  - component: {fileID: -8947488750107204412}
-  - component: {fileID: 1855565035901910831}
   - component: {fileID: 5323646269619103421}
+  - component: {fileID: -5370483453293147481}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Organic
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: -8394900339423757436, guid: f5541bb0594395c4ea69fe9292d39900, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,8 +89,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-8947488750107204412
-PolygonCollider2D:
+--- !u!114 &5323646269619103421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214676375349701907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDetectRange: 1.5
+--- !u!61 &-5370483453293147481
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,79 +146,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.945, y: -0.475}
-      - {x: 0.945, y: -0.435}
-      - {x: 0.655, y: -0.345}
-      - {x: 0.695, y: -0.315}
-      - {x: 0.72499996, y: -0.255}
-      - {x: 0.575, y: -0.205}
-      - {x: 0.205, y: -0.16499999}
-      - {x: 0.155, y: -0.085}
-      - {x: 0.155, y: 0.205}
-      - {x: 0.145, y: 0.275}
-      - {x: 0.205, y: 0.445}
-      - {x: 0.105, y: 0.565}
-      - {x: -0.005, y: 0.565}
-      - {x: -0.015, y: 0.545}
-      - {x: -0.114999995, y: 0.405}
-      - {x: -0.235, y: 0.345}
-      - {x: -0.295, y: 0.265}
-      - {x: -0.325, y: 0.095}
-      - {x: -0.33499998, y: 0.024999999}
-      - {x: -0.39499998, y: -0.105}
-      - {x: -0.615, y: -0.074999996}
-      - {x: -0.645, y: -0.085}
-      - {x: -0.835, y: -0.24499999}
-      - {x: -0.945, y: -0.435}
-      - {x: -0.945, y: -0.445}
-      - {x: -0.92499995, y: -0.48499998}
-      - {x: -0.715, y: -0.49499997}
-      - {x: -0.53499997, y: -0.48499998}
-      - {x: -0.375, y: -0.565}
-      - {x: 0.044999998, y: -0.565}
-      - {x: 0.705, y: -0.525}
-      - {x: 0.84499997, y: -0.545}
-      - {x: 0.935, y: -0.49499997}
-  m_UseDelaunayMesh: 0
---- !u!50 &1855565035901910831
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214676375349701907}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &5323646269619103421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214676375349701907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectRange: 1.5
+  m_Size: {x: 1.91, y: 1.13}
+  m_EdgeRadius: 0

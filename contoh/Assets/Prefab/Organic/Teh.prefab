@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8134075524065610321}
   - component: {fileID: 7028836217894948065}
-  - component: {fileID: -7448950429678168733}
-  - component: {fileID: -8064234540504791180}
   - component: {fileID: 1995170691931565691}
+  - component: {fileID: 5154506135127795169}
   m_Layer: 0
   m_Name: Teh
   m_TagString: Organic
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7885027107042499171, guid: e1a0a17c3b5821042b1435f3ba6d6f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,8 +89,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-7448950429678168733
-PolygonCollider2D:
+--- !u!114 &1995170691931565691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8875123430853778560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDetectRange: 1.5
+--- !u!61 &5154506135127795169
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,73 +146,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.65, y: 0.105}
-      - {x: 0.7, y: 0.285}
-      - {x: 0.7, y: 0.385}
-      - {x: 0.65999997, y: 0.415}
-      - {x: 0.59999996, y: 0.435}
-      - {x: 0.53999996, y: 0.475}
-      - {x: 0.42999998, y: 0.53499997}
-      - {x: 0.35999998, y: 0.565}
-      - {x: 0.29999998, y: 0.585}
-      - {x: 0.22999999, y: 0.60499996}
-      - {x: -0.06, y: 0.60499996}
-      - {x: -0.17999999, y: 0.575}
-      - {x: -0.25, y: 0.555}
-      - {x: -0.42999998, y: 0.515}
-      - {x: -0.59999996, y: 0.445}
-      - {x: -0.69, y: 0.42499998}
-      - {x: -0.7, y: 0.42499998}
-      - {x: -0.7, y: 0.33499998}
-      - {x: -0.66999996, y: 0.255}
-      - {x: -0.63, y: 0.125}
-      - {x: -0.55, y: -0.145}
-      - {x: -0.44, y: -0.49499997}
-      - {x: -0.41, y: -0.575}
-      - {x: -0.39, y: -0.60499996}
-      - {x: 0.45, y: -0.60499996}
-      - {x: 0.48, y: -0.585}
-      - {x: 0.53999996, y: -0.345}
-  m_UseDelaunayMesh: 0
---- !u!50 &-8064234540504791180
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8875123430853778560}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1995170691931565691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8875123430853778560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectRange: 1.5
+  m_Size: {x: 1.4, y: 1.21}
+  m_EdgeRadius: 0

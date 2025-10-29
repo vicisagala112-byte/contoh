@@ -2,98 +2,102 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SampahManager : MonoBehaviour
+namespace Anoa.Explore
 {
-    [Header("Referensi Sungai & Sampah")]
-    public GameObject[] sampahPrefabs;     // Daftar jenis sampah
-    public int jumlahSampah = 10;          // Total sampah di dunia
-    public float respawnDelay = 5f;        // Waktu respawn setelah diambil
-
-    private List<GameObject> sampahPool = new List<GameObject>();
-    private List<Collider2D> areaSungai = new List<Collider2D>();
-
-    void Start()
+    public class SampahManager : MonoBehaviour
     {
-        // Cari semua area dengan tag "Sungai"
-        GameObject[] sungaiObjects = GameObject.FindGameObjectsWithTag("Sungai");
-        foreach (GameObject s in sungaiObjects)
-        {
-            Collider2D col = s.GetComponent<Collider2D>();
-            if (col != null)
-                areaSungai.Add(col);
-        }
+        [Header("Pengaturan Sampah")]
+        [SerializeField] protected GameObject[] arrObjSampahPrefabs;
+        [SerializeField] protected int intJumlahMaksimalSampah = 20;
+        [SerializeField] protected int intJumlahAktifAwal = 10;
 
-        if (areaSungai.Count == 0)
-        {
-            Debug.LogWarning("❗ Tidak ada objek bertag 'Sungai' yang punya Collider2D!");
-            return;
-        }
+        [Header("Respawn Settings")]
+        [SerializeField] protected float floatRespawnDelay = 2f;
+        [SerializeField] protected int intMinSpawnBaru = 1;
+        [SerializeField] protected int intMaxSpawnBaru = 3;
 
-        // Buat pool sampah
-        for (int i = 0; i < jumlahSampah; i++)
-        {
-            GameObject prefab = sampahPrefabs[Random.Range(0, sampahPrefabs.Length)];
-            GameObject sampah = Instantiate(prefab);
-            sampah.SetActive(false);
-            sampahPool.Add(sampah);
-        }
+        protected List<GameObject> listObjSampahPool = new List<GameObject>();
+        protected List<Collider2D> listColSungai = new List<Collider2D>();
 
-        // Spawn awal
-        SpawnAllTrash();
-    }
-
-    public void SpawnAllTrash()
-    {
-        foreach (var trash in sampahPool)
+        protected void Start()
         {
-            if (!trash.activeSelf)
+            GameObject[] _arrObjSungai = GameObject.FindGameObjectsWithTag("Sungai");
+            foreach (GameObject _objSungai in _arrObjSungai)
             {
-                Vector3 spawnPos = GetRandomRiverPosition();
-                trash.transform.position = spawnPos;
-                trash.SetActive(true);
+                Collider2D _col = _objSungai.GetComponent<Collider2D>();
+                if (_col != null)
+                    listColSungai.Add(_col);
             }
-        }
-    }
 
-    public void DespawnTrash(GameObject trash)
-    {
-        trash.SetActive(false);
-        StartCoroutine(RespawnTrash(trash));
-    }
-
-    private IEnumerator RespawnTrash(GameObject trash)
-    {
-        yield return new WaitForSeconds(respawnDelay);
-        Vector3 spawnPos = GetRandomRiverPosition();
-        trash.transform.position = spawnPos;
-        trash.SetActive(true);
-    }
-
-    // Dapatkan posisi acak di dalam collider sungai mana pun
-    private Vector3 GetRandomRiverPosition()
-    {
-        if (areaSungai.Count == 0)
-        {
-            Debug.LogError("Tidak ada area sungai ditemukan!");
-            return Vector3.zero;
-        }
-
-        Collider2D col = areaSungai[Random.Range(0, areaSungai.Count)];
-        Bounds bounds = col.bounds;
-
-        for (int i = 0; i < 50; i++) // coba beberapa kali cari posisi valid
-        {
-            float x = Random.Range(bounds.min.x, bounds.max.x);
-            float y = Random.Range(bounds.min.y, bounds.max.y);
-            Vector2 randomPoint = new Vector2(x, y);
-
-            if (col.OverlapPoint(randomPoint))
+            if (listColSungai.Count == 0)
             {
-                return randomPoint;
+                Debug.LogWarning("❗ Tidak ada objek bertag 'Sungai' yang punya Collider2D!");
+                return;
             }
+
+            for (int i = 0; i < intJumlahMaksimalSampah; i++)
+            {
+                GameObject _prefab = arrObjSampahPrefabs[Random.Range(0, arrObjSampahPrefabs.Length)];
+                GameObject _objSampah = Instantiate(_prefab);
+                _objSampah.SetActive(false);
+
+                if (_objSampah.GetComponent<SampahBehavior>() == null)
+                    _objSampah.AddComponent<SampahBehavior>();
+
+                listObjSampahPool.Add(_objSampah);
+            }
+
+            for (int i = 0; i < intJumlahAktifAwal; i++)
+                FunctionActivateRandomTrash();
         }
 
-        // fallback jika gagal cari titik di dalam collider
-        return col.bounds.center;
+        protected void FunctionActivateRandomTrash()
+        {
+            List<GameObject> _listNonActive = listObjSampahPool.FindAll(t => !t.activeSelf);
+            if (_listNonActive.Count == 0) return;
+
+            GameObject _objRandomTrash = _listNonActive[Random.Range(0, _listNonActive.Count)];
+            Vector3 _vecSpawnPos = FunctionGetRandomRiverPosition();
+            _objRandomTrash.transform.position = _vecSpawnPos;
+            _objRandomTrash.SetActive(true);
+        }
+
+        public void FunctionOnTrashCollected(GameObject _objTrash)
+        {
+            _objTrash.SetActive(false);
+            StartCoroutine(FunctionRespawnRandomTrash());
+        }
+
+        protected IEnumerator FunctionRespawnRandomTrash()
+        {
+            yield return new WaitForSeconds(floatRespawnDelay);
+
+            int _intJumlahBaru = Random.Range(intMinSpawnBaru, intMaxSpawnBaru + 1);
+            for (int i = 0; i < _intJumlahBaru; i++)
+                FunctionActivateRandomTrash();
+
+            Debug.Log($"🔁 {_intJumlahBaru} sampah baru diaktifkan setelah ambil sampah!");
+        }
+
+        protected Vector3 FunctionGetRandomRiverPosition()
+        {
+            if (listColSungai.Count == 0)
+                return Vector3.zero;
+
+            Collider2D _col = listColSungai[Random.Range(0, listColSungai.Count)];
+            Bounds _bounds = _col.bounds;
+
+            for (int i = 0; i < 50; i++)
+            {
+                float _x = Random.Range(_bounds.min.x, _bounds.max.x);
+                float _y = Random.Range(_bounds.min.y, _bounds.max.y);
+                Vector2 _vecRandomPoint = new Vector2(_x, _y);
+
+                if (_col.OverlapPoint(_vecRandomPoint))
+                    return _vecRandomPoint;
+            }
+
+            return _col.bounds.center;
+        }
     }
 }

@@ -1,71 +1,74 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace Anoa.Player
 {
-    [Header("Movement Settings")]
-    public float moveSpeed = 5f;
-    public Joystick joystick;
-
-    private Rigidbody2D rb;
-    private Animator anim;
-    private Vector2 movement;
-
-    [Header("Boat Settings")]
-    public bool isOnBoat = false;   // apakah player di kapal?
-    public GameObject boat;         // referensi kapal (bisa prefab atau child dari player)
-
-    void Start()
+    public class PlayerController : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        [Header("Movement Settings")]
+        [SerializeField] protected float floatMoveSpeed = 5f;
+        [SerializeField] protected Joystick joystick;
 
-        if (boat != null)
-            boat.SetActive(false); // awalnya kapal disembunyikan
-    }
+        protected Rigidbody2D rb;
+        protected Animator anim;
+        protected Vector2 vecMovement;
 
-    void Update()
-    {
-        // Input
-        float moveX = joystick != null ? joystick.Horizontal : Input.GetAxisRaw("Horizontal");
-        float moveY = joystick != null ? joystick.Vertical : Input.GetAxisRaw("Vertical");
+        [Header("Boat Settings")]
+        [SerializeField] protected bool boolIsOnBoat = false;
+        [SerializeField] protected GameObject objBoat;
 
-        movement = new Vector2(moveX, moveY).normalized;
-
-        // Animator
-        bool isMoving = movement.magnitude > 0;
-        anim.SetBool("isMoving", isMoving);
-
-        if (isMoving)
+        protected void Start()
         {
-            anim.SetFloat("moveX", movement.x);
-            anim.SetFloat("moveY", movement.y);
+            rb = GetComponent<Rigidbody2D>();
+            anim = GetComponent<Animator>();
+
+            if (objBoat != null)
+                objBoat.SetActive(false);
         }
-    }
 
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    // === Masuk Sungai ===
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Sungai"))
+        protected void Update()
         {
-            isOnBoat = true;
-            if (boat != null) boat.SetActive(true);  // munculkan kapal
-            Debug.Log("Player naik kapal!");
+            float _floatMoveX = joystick != null ? joystick.Horizontal : Input.GetAxisRaw("Horizontal");
+            float _floatMoveY = joystick != null ? joystick.Vertical : Input.GetAxisRaw("Vertical");
+
+            vecMovement = new Vector2(_floatMoveX, _floatMoveY).normalized;
+
+            bool _boolIsMoving = vecMovement.magnitude > 0;
+            anim.SetBool("isMoving", _boolIsMoving);
+
+            if (_boolIsMoving)
+            {
+                anim.SetFloat("moveX", vecMovement.x);
+                anim.SetFloat("moveY", vecMovement.y);
+            }
         }
-    }
 
-    // === Keluar Sungai ===
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Sungai"))
+        protected void FixedUpdate()
         {
-            isOnBoat = false;
-            if (boat != null) boat.SetActive(false); // sembunyikan kapal
-            Debug.Log("Player turun kapal!");
+            rb.MovePosition(rb.position + vecMovement * floatMoveSpeed * Time.fixedDeltaTime);
+        }
+
+        protected void OnTriggerEnter2D(Collider2D _col)
+        {
+            if (_col.CompareTag("Sungai"))
+            {
+                boolIsOnBoat = true;
+                if (objBoat != null)
+                    objBoat.SetActive(true);
+
+                Debug.Log("Player naik kapal!");
+            }
+        }
+
+        protected void OnTriggerExit2D(Collider2D _col)
+        {
+            if (_col.CompareTag("Sungai"))
+            {
+                boolIsOnBoat = false;
+                if (objBoat != null)
+                    objBoat.SetActive(false);
+
+                Debug.Log("Player turun kapal!");
+            }
         }
     }
 }

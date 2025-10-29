@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4396230066065313270}
   - component: {fileID: 5075651081435498350}
-  - component: {fileID: 8622129732004895265}
-  - component: {fileID: -6119314885405144913}
   - component: {fileID: -8993858383376811333}
+  - component: {fileID: -5589251560190256953}
   m_Layer: 0
   m_Name: SisaSayuran
   m_TagString: Organic
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 474238618293125304, guid: db1990532d0fa3b4b901557b6ba10809, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,8 +89,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &8622129732004895265
-PolygonCollider2D:
+--- !u!114 &-8993858383376811333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113816928611382978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatDetectRange: 1.5
+--- !u!61 &-5589251560190256953
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,93 +146,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.17999999, y: -0.22999999}
-      - {x: 0.21, y: -0.14999999}
-      - {x: 0.19999999, y: -0.02}
-      - {x: 0.19, y: 0.01}
-      - {x: 0.53999996, y: -0.01}
-      - {x: 0.59, y: 0.04}
-      - {x: 0.65, y: 0.17}
-      - {x: 0.64, y: 0.21}
-      - {x: 0.48999998, y: 0.19999999}
-      - {x: 0.64, y: 0.22999999}
-      - {x: 0.71999997, y: 0.28}
-      - {x: 0.71999997, y: 0.35}
-      - {x: 0.71, y: 0.38}
-      - {x: 0.64, y: 0.39}
-      - {x: 0.45999998, y: 0.32999998}
-      - {x: 0.53, y: 0.38}
-      - {x: 0.62, y: 0.47}
-      - {x: 0.58, y: 0.57}
-      - {x: 0.63, y: 0.64}
-      - {x: 0.58, y: 0.71}
-      - {x: 0.5, y: 0.71}
-      - {x: 0.38, y: 0.61}
-      - {x: 0.37, y: 0.68}
-      - {x: 0.34, y: 0.71}
-      - {x: 0.24, y: 0.71}
-      - {x: 0.14, y: 0.55}
-      - {x: -0.01, y: 0.25}
-      - {x: -0.049999997, y: 0.29999998}
-      - {x: -0.29999998, y: 0.32999998}
-      - {x: -0.61, y: 0.16}
-      - {x: -0.71, y: 0.02}
-      - {x: -0.66999996, y: 0.01}
-      - {x: -0.56, y: 0}
-      - {x: -0.71999997, y: -0.19}
-      - {x: -0.71999997, y: -0.28}
-      - {x: -0.57, y: -0.31}
-      - {x: -0.68, y: -0.5}
-      - {x: -0.59999996, y: -0.53}
-      - {x: -0.39999998, y: -0.42999998}
-      - {x: -0.35, y: -0.47}
-      - {x: -0.45999998, y: -0.66999996}
-      - {x: -0.45, y: -0.71}
-      - {x: -0.38, y: -0.71}
-      - {x: -0.35999998, y: -0.7}
-      - {x: -0.19999999, y: -0.61}
-      - {x: 0.02, y: -0.44}
-      - {x: 0.14, y: -0.31}
-  m_UseDelaunayMesh: 0
---- !u!50 &-6119314885405144913
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7113816928611382978}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-8993858383376811333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7113816928611382978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectRange: 1.5
+  m_Size: {x: 1.44, y: 1.42}
+  m_EdgeRadius: 0

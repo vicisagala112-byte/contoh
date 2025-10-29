@@ -1,25 +1,40 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SampahBehavior : MonoBehaviour
+namespace Anoa.Explore
 {
-    public float detectRange = 1.5f;
-    private Transform player;
-    private SampahManager sampahManager;
-
-    void Start()
+    public class SampahBehavior : MonoBehaviour
     {
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
-        sampahManager = FindObjectOfType<SampahManager>();
-    }
+        [SerializeField] protected float floatDetectRange = 1.5f;
 
-    void Update()
-    {
-        if (player == null || sampahManager == null) return;
+        protected Transform transPlayer;
+        protected SampahManager classSampahManager;
+        protected SampahUIManager classSampahUI;
 
-        float distance = Vector2.Distance(transform.position, player.position);
-        if (distance <= detectRange)
+        protected void Start()
         {
-            sampahManager.DespawnTrash(gameObject);
+            transPlayer = GameObject.FindGameObjectWithTag("Player")?.transform;
+            classSampahManager = FindObjectOfType<SampahManager>();
+            classSampahUI = FindObjectOfType<SampahUIManager>();
+        }
+
+        protected void Update()
+        {
+            if (transPlayer == null || classSampahUI == null)
+                return;
+
+            float _floatDistance = Vector2.Distance(transform.position, transPlayer.position);
+            if (_floatDistance <= floatDetectRange)
+            {
+                if (classSampahUI.FunctionTongPenuh())
+                    return;
+
+                bool _boolBerhasil = classSampahUI.FunctionTambahSampah();
+                if (_boolBerhasil)
+                {
+                    gameObject.SetActive(false);
+                    classSampahManager?.FunctionOnTrashCollected(gameObject);
+                }
+            }
         }
     }
 }
