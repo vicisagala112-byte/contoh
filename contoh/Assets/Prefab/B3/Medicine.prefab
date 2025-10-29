@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7243211877786462894}
   - component: {fileID: -4298760203270450983}
   - component: {fileID: -833523985575266848}
+  - component: {fileID: 6728984074908961876}
   m_Layer: 0
   m_Name: Medicine
   m_TagString: B3
@@ -187,3 +188,16 @@ PolygonCollider2D:
       - {x: -0.125, y: -0.49499997}
       - {x: 0.53499997, y: 0.044999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &6728984074908961876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747901059437024078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5

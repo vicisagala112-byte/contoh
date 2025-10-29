@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5075651081435498350}
   - component: {fileID: 8622129732004895265}
   - component: {fileID: -6119314885405144913}
+  - component: {fileID: -8993858383376811333}
   m_Layer: 0
   m_Name: SisaSayuran
   m_TagString: Organic
@@ -210,3 +211,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8993858383376811333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7113816928611382978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5

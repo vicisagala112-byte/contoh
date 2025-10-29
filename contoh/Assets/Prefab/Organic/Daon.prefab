@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7963972361210765278}
   - component: {fileID: 2584870282782638468}
   - component: {fileID: -3336469845721528982}
+  - component: {fileID: -4134630834374633102}
   m_Layer: 0
   m_Name: Daon
   m_TagString: Organic
@@ -189,3 +190,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4134630834374633102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6656295908176938738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be21bcfbef46a0e42b47eac9830d876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectRange: 1.5
