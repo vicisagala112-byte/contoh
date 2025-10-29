@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chibi male1_0: 7246804043413086610
+      chibi male1_1: -2499084814622379022
+      chibi male1_2: 8377385345897664848
+      chibi male1_3: 8520521898415566573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
