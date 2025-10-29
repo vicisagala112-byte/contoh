@@ -10,6 +10,12 @@ TagManager:
   - Organic
   - Anorganic
   - B3
+  - Sungai
+  - Trash
+  - Lokasi
+  - TongOrganik
+  - TongAnorganik
+  - TongB3
   layers:
   - Default
   - TransparentFX

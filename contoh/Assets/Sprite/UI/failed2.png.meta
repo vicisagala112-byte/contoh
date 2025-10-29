@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 547780288b577d245a7fb5dff3a9ae0d
+guid: 2a4d724e03c14e8419514d9ec0cb90d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2795247646501467397
-    second: Ranting_0
+      213: -1325640809973094198
+    second: failed2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,30 +122,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ranting_0
+      name: failed2_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 48
-        width: 95
-        height: 111
+        x: 0
+        y: 0
+        width: 1848
+        height: 1705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfa880b43194539d0800000000000000
-      internalID: -2795247646501467397
+      spriteID: ac8eac5f4b06a9de0800000000000000
+      internalID: -1325640809973094198
       vertices: []
       indices: 
       edges: []
@@ -173,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Ranting_0: -2795247646501467397
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,97 +1,108 @@
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
-namespace sorting
+namespace Anoa
 {
     public class GameManagerSorting : MonoBehaviour
     {
-        [Header("Tampilan")]
-        public Text timeText;
-        public Text coinText;
+        [Header("Refs")]
+        [SerializeField] protected TrashManager trashManager;
+        [SerializeField] protected UIManager uiManager;
+        [SerializeField] protected SoundManager soundManager;
 
-        [Header("Panel Pesan")]
-        public GameObject resultPanel;   // Panel untuk menampilkan pesan
-        public Text resultText;          // Text di dalam panel
+        [Header("Game Settings")]
+        [SerializeField] protected float floatWaktuMax = 30f;
+        [SerializeField] protected int intKoin = 0;
 
-        [Header("Atur Waktu")]
-        public float maxTime = 30f;
+        protected float floatWaktuSekarang;
+        protected bool boolGameBerakhir = false;
 
-        private float currentTime;
-        private int coins = 0;
-        private bool gameOver = false;
-
-        void Start()
+        private void Start()
         {
-            currentTime = maxTime;
-            UpdateUI();
-
-            if (resultPanel != null)
-                resultPanel.SetActive(false); // pastikan panel pesan mati di awal
+            floatWaktuSekarang = floatWaktuMax;
+            uiManager.FunctionUpdateWaktu(floatWaktuSekarang);
+            uiManager.FunctionUpdateKoin(intKoin);
         }
 
-        void Update()
+        private void Update()
         {
-            if (!gameOver)
+            if (boolGameBerakhir) return;
+
+            floatWaktuSekarang -= Time.deltaTime;
+            uiManager.FunctionUpdateWaktu(floatWaktuSekarang);
+
+            if (floatWaktuSekarang <= 0f)
             {
-                if (currentTime > 0)
-                {
-                    currentTime -= Time.deltaTime;
-                    if (currentTime < 0) currentTime = 0;
-                    UpdateUI();
-                }
-                else
-                {
-                    gameOver = true;
-                    ShowResult("WAKTU HABIS!");
-                }
+                floatWaktuSekarang = 0f;
+                FunctionGameOver();
+            }
+
+            // jika semua sampah habis
+            if (trashManager != null && trashManager.IsAllCleared() && !boolGameBerakhir)
+            {
+                FunctionFinish();
             }
         }
 
-        public void AddCoins(int amount)
+        public void FunctionBenarBuangSampah(TrashController _trash)
         {
-            if (gameOver) return;
+            if (boolGameBerakhir) return;
 
-            coins += amount;
-            UpdateUI();
-            ShowResult("Benar!");
-        }
+            intKoin += 10;
+            uiManager.FunctionTampilTeksBenar();
+            uiManager.FunctionUpdateKoin(intKoin);
 
-        public void ReduceTime(float amount)
-        {
-            if (gameOver) return;
-
-            currentTime -= amount;
-            if (currentTime < 0) currentTime = 0;
-
-            UpdateUI();
-            ShowResult("Salah!");
-        }
-
-        private void UpdateUI()
-        {
-            if (timeText != null)
-                timeText.text = "Waktu: " + Mathf.CeilToInt(currentTime);
-
-            if (coinText != null)
-                coinText.text = coins.ToString();
-        }
-
-        public void ShowResult(string message)
-        {
-            if (resultPanel != null && resultText != null)
+            // 🔊 Mainkan efek suara benar dan koin bertambah
+            if (soundManager != null)
             {
-                resultText.text = message;
-                resultPanel.SetActive(true);
-
-                CancelInvoke(nameof(HideResult));
-                Invoke(nameof(HideResult), 1.5f); // panel otomatis hilang setelah 1.5 detik
+                soundManager.FunctionPlaySampahBenar();
+                soundManager.FunctionPlayKoinBertambah();
             }
         }
 
-        private void HideResult()
+        public void FunctionSalahBuangSampah()
         {
-            if (resultPanel != null)
-                resultPanel.SetActive(false);
+            if (boolGameBerakhir) return;
+
+            floatWaktuSekarang -= 2f;
+            if (floatWaktuSekarang < 0f) floatWaktuSekarang = 0f;
+            uiManager.FunctionTampilTeksSalah();
+            uiManager.FunctionUpdateWaktu(floatWaktuSekarang);
+
+            // 🔊 Mainkan efek suara salah
+            if (soundManager != null)
+            {
+                soundManager.FunctionPlaySampahSalah();
+            }
+
+            if (floatWaktuSekarang <= 0f)
+            {
+                FunctionGameOver();
+            }
+        }
+
+        protected void FunctionGameOver()
+        {
+            if (boolGameBerakhir) return;
+            boolGameBerakhir = true;
+            uiManager.FunctionTampilPanelGameOver(intKoin);
+
+            // 🔊 Mainkan efek suara kalah
+            if (soundManager != null)
+            {
+                soundManager.FunctionPlayKalah();
+            }
+        }
+        protected void FunctionFinish()
+        {
+            if (boolGameBerakhir) return;
+            boolGameBerakhir = true;
+            uiManager.FunctionTampilPanelFinish(intKoin);
+
+            // 🔊 Mainkan efek suara menang
+            if (soundManager != null)
+            {
+                soundManager.FunctionPlayMenang();
+            }
         }
     }
 }
